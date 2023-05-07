@@ -153,6 +153,9 @@ main{
     background: transparent;
     border: none;
 }
+.mensaje:focus {
+    outline:none;
+}
 
 
 /*.encriptado{
