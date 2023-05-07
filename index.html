@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+
+    <header>
+        <img class="logo" src="imagenes/logo.png" alt="logo de alura">
+    </header>
+
+    <main>
+
+      <section class="container">
+
+        <p class="titulochallenge">Challenge #1: Encriptador</p>
+
+        <div class="encriptar">
+          <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese aquí el texto aquí"></textarea>
+        </div>
+
+        <div class="terminos"> 
+          <h6>&#33 Solo letras minúsculas y sin acentos</h6>
+        </div>
+
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+
+      </section>
+
+      <section class="encriptado">
+
+        <textarea class="mensaje" cols="30" rows="10"></textarea>
+
+          <img src="imagenes/Munheco.png" alt="imagen de munheco" id="munheco">
+          
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+
+            <h2 id="titulomensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+            
+            <div class="contendor-copiar">
+              <button class="btn-copiar" value="copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+
+          </div>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      <p class="footerInfo">&copy Priscila Castellón Vásquez - 2023</p>
+    </footer>
+    
+
+    <script src="main.js">
+    </script>
+
+  </body>
+
+</html>
